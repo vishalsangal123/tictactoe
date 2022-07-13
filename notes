@@ -13,3 +13,15 @@
     9. package lock for lock dependencies
     10. .gitignore : it allows to u ignore files will not be  recognized by the git system   
     11. index.js is the entry point 
+
+
+
+
+
+    1. create component folder
+    2. create file(.js)
+    3. rafce
+    4.for string value="fffff"
+    5.for expression,function,number use {1}
+    6. these  value treat as a object when pass and receive in function after that print on console and check it is an object
+    7. if u don't write value which one is pass then take as empty object 
