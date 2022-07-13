@@ -28,3 +28,4 @@
     8. for styling install saas ---> using (npm install -D sass )
     9. all classes are global like as app,square.jsx,board.jsx
     10.npm install node-sass
+    11. npm run start , npm run build , npm run clear 
