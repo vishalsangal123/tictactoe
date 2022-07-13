@@ -25,3 +25,6 @@
     5.for expression,function,number use {1}
     6. these  value treat as a object when pass and receive in function after that print on console and check it is an object
     7. if u don't write value which one is pass then take as empty object 
+    8. for styling install saas ---> using (npm install -D sass )
+    9. all classes are global like as app,square.jsx,board.jsx
+    10.npm install node-sass
