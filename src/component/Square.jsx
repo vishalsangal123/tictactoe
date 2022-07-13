@@ -1,6 +1,5 @@
-import React from 'react'
+import React from "react";
 // import './Square.style.css';
-
 
 // const Square = (props) => {
 //     // console.log(props);
@@ -14,9 +13,16 @@ import React from 'react'
 
 // destructing perform bcz value treat as a object then write in this method
 
-const Square = ({children,value}) => {
-     return <button type="button" className='square'>{value}</button>;
-   // return <button type="button">{children}</button>;
-}
+const Square = ({value,onclick }) => {
+  return (
+    <button type="button" className="square" onClick={onclick}>
+      {value}
+    </button>
+  );
+  // return <button type="button">{children}</button>;
+//   onClick={()=>{
+//     console.log(value);
+// }}>
+};
 
 export default Square;

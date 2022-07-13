@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 import Board from './component/Board';
-import "./styles/root.scss";
+import './styles/root.scss';
 // export default () => (
 //   <>
 //     <h1>Welcome to React Vite Micro App!</h1>
@@ -9,13 +9,10 @@ import "./styles/root.scss";
 // );
 
 const App = () => {
-    return ( 
+  return (
     <div className="app">
-        
-        <h1> TIC TAC TOE</h1>{" "} 
-       
-        <Board/>
-        </div>
-    );
+      <h1> TIC TAC TOE</h1> <Board />
+    </div>
+  );
 };
 export default App;
