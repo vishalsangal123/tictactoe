@@ -14,6 +14,7 @@ import React from "react";
 // destructing perform bcz value treat as a object then write in this method
 
 const Square = ({value,onclick }) => {
+  console.log('square rerender');
   return (
     <button type="button" className="square" onClick={onclick}>
       {value}

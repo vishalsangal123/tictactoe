@@ -2,36 +2,16 @@ import React ,{useState} from "react";
 
 import Square from "./Square";
 
-const Board = () => {
-
-const [board,setBoard]=useState(Array(9).fill(null));
-const [isXNext,setisXNext]=useState(false);
-// console.log(board);
-
-
-const handleSquareClick=(position)=>{
-
-  if(board[position])
-  return;
-  setBoard((prev)=>{
-    return prev.map((square,pos)=>
-    {
-      if(pos===position)
-    {
-      return isXNext? 'X':'O';
-    }
-    return square;
-    })
-  });
-  setisXNext((prev)=>!prev);
-};
-
+const Board = ({board,handleSquareClick}) => 
+{
 const renderSquare=(position)=>{
-  return(<Square value={board[position]}  onclick={()=>{
-    handleSquareClick(position)
-     }}/>)
+  return(<Square value={board[position]}  
+    onclick={()=>{handleSquareClick(position)}}
+     />
+     );
+    };
 
-}
+
 
 // onclick={functionname()}   ----> if u write in this way then not work bcz it executes immediately  this is a principle of javascript node react
   return (
