@@ -4,13 +4,15 @@ import Square from "./Square";
 
 const Board = ({board,handleSquareClick}) => 
 {
-const renderSquare=(position)=>{
+
+  //const isWinningSquare=winningSquares.includes(position);
+const renderSquare= (position) =>{
   return(<Square value={board[position]}  
-    onclick={()=>{handleSquareClick(position)}}
+    onclick={()=>handleSquareClick(position)}
+    //isWinningSquare={isWinningSquare}
      />
      );
     };
-
 
 
 // onclick={functionname()}   ----> if u write in this way then not work bcz it executes immediately  this is a principle of javascript node react
