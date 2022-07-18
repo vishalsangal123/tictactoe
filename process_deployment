@@ -1,0 +1,12 @@
+1.npm install --global surge
+2. surge login
+output:
+  Login (or create surge account) by entering email & password.
+
+          email: 
+          fill email ----> vishalsangal72@gmail.com
+        password:- Vishnu
+        npm run build
+    surge dist
+      project: dist
+         domain: tictacgame.surge.sh
